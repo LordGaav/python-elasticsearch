@@ -1,7 +1,7 @@
 KEY=CD9C0E84
 DIST=trusty
 SRC=../elasticsearch-py
-VERSION=0.4.4
+VERSION=$(shell dpkg-parsechangelog | grep Version: | cut -d' ' -f2- )
 
 clean:
 	rm -R elasticsearch-py
