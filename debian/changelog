@@ -1,0 +1,7 @@
+python-elasticsearch (0.4.4-chaos1) RELEASE; urgency=low
+
+  * Non-maintainer upload.
+  * Uses upstream release 0.4.4 as base
+
+ -- Nick Douma <n.douma@nekoconeko.nl>  Thu, 14 Mar 2014 12:00:00 +0100
+

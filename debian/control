@@ -1,0 +1,43 @@
+Source: python-elasticsearch
+Section: python
+Priority: extra
+Maintainer: Nick Douma <n.douma@nekoconeko.nl>
+Build-Depends: debhelper (>= 8.0.0),
+ python (>= 2.6.6-3~),
+ python-setuptools,
+ python3 (>= 3.2),
+ python3-setuptools,
+# python-requests,
+# python-nose,
+# python-coverage,
+# python-mock,
+# python-nosexcover,
+# python-pyaml,
+# python-urllib3,
+# python-pylibmc
+Standards-Version: 3.9.2
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+Homepage: https://pypi.python.org/pypi/elasticsearch/
+Vcs-Git: git@github.com:LordGaav/python-elasticsearch.git
+Vcs-Browser: https://github.com/LordGaav/python-elasticsearch.git
+
+Package: python-elasticsearch
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-urllib3 (>= 1.5)
+Description: Python client for Elasticsearch.
+ Official low-level client for Elasticsearch. Its goal
+ is to provide common ground for all Elasticsearch-related
+ code in Python; because of this it tries to be
+ opinion-free and very extendable.
+
+Package: python3-elasticsearch
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-urllib3 (>= 1.5)
+Description: Python client for Elasticsearch.
+ Official low-level client for Elasticsearch. Its goal
+ is to provide common ground for all Elasticsearch-related
+ code in Python; because of this it tries to be
+ opinion-free and very extendable.
+ .
+ This package contains the Python3 version.
