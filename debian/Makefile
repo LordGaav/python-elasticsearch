@@ -1,7 +1,7 @@
 KEY=CD9C0E84
 DIST=trusty
 SRC=../elasticsearch-py
-VERSION=$(shell dpkg-parsechangelog | grep Version: | cut -d' ' -f2- | cut -d'-' -f1)
+VERSION=$(shell dpkg-parsechangelog | grep Version: | cut -d' ' -f2-)
 
 clean:
 	rm -R elasticsearch-py
@@ -22,5 +22,5 @@ pbuild:
 	pbuilder-dist "$(DIST)" "$(CHANGES)"
 
 make_source_tarball:
-	(cd $(SRC) && git checkout $(VERSION)) && \
+	(cd $(SRC) && git checkout $(shell echo -n "$(VERSION)" | cut -d"-f" -f1 )) && \
 	tar zcvf ../python-elasticsearch_$(VERSION).orig.tar.gz $(SRC) --exclude="test_elasticsearch" --exclude=".git*"
