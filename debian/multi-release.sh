@@ -21,9 +21,6 @@ fi
 
 BASE=$(dirname $CMD)
 
-echo_red "Creating source tarball"
-make -f debian/Makefile make_source_tarball
-
 echo_red "Changing to debian control dir"
 pushd $BASE
 
