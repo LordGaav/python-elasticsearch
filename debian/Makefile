@@ -9,7 +9,7 @@ clean:
 package:
 	dpkg-buildpackage -A -us -uc
  
-source: make_source_tarball
+source:
 	dpkg-buildpackage -S -k$(KEY)
 
 source_no_sign: make_source_tarball
@@ -22,5 +22,5 @@ pbuild:
 	pbuilder-dist "$(DIST)" "$(CHANGES)"
 
 make_source_tarball:
-	(cd $(SRC) && git checkout $(shell echo -n "$(VERSION)" | cut -d"-f" -f1 )) && \
-	tar zcvf ../python-elasticsearch_$(VERSION).orig.tar.gz $(SRC) --exclude="test_elasticsearch" --exclude=".git*"
+	(cd $(SRC) && git checkout $(shell echo -n "$(VERSION)" | cut -d"-" -f1 )) && \
+	tar zcvf ../python-elasticsearch-1.0_$(VERSION).orig.tar.gz $(SRC) --exclude="test_elasticsearch" --exclude=".git*"

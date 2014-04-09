@@ -1,4 +1,4 @@
-Source: python-elasticsearch
+Source: python-elasticsearch-1.0
 Section: python
 Priority: extra
 Maintainer: Nick Douma <n.douma@nekoconeko.nl>

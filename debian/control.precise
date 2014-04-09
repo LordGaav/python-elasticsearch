@@ -1,4 +1,4 @@
-Package: python-elasticsearch
+Package: python-elasticsearch-1.0
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-urllib3 (>= 1.5)
 Description: Python client for Elasticsearch.
@@ -7,7 +7,7 @@ Description: Python client for Elasticsearch.
  code in Python; because of this it tries to be
  opinion-free and very extendable.
 
-Package: python3-elasticsearch
+Package: python3-elasticsearch-1.0
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends}, python3-urllib3 (>= 1.5)
 Description: Python client for Elasticsearch.
