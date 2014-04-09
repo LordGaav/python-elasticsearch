@@ -19,6 +19,6 @@ To build this package, I suggest using pbuilder-dist:
 
 OR
 
-1. Install my PPA and install the package: `add-apt-repository ppa:lordgaav/python-elasticsearch && apt-get update && apt-get install python-elasticsearch`.
+1. Install my PPA and install the package: `add-apt-repository ppa:lordgaav/python-elasticsearch && apt-get update && apt-get install python-elasticsearch-0.4`.
 
 [elasticsearch-py]: https://github.com/elasticsearch/elasticsearch-py/tree/0.4

@@ -21,6 +21,9 @@ fi
 
 BASE=$(dirname $CMD)
 
+echo_red "Creating source tarball"
+make -f debian/Makefile make_source_tarball
+
 echo_red "Changing to debian control dir"
 pushd $BASE
 
@@ -66,7 +69,7 @@ done
 popd
 
 if [ "$UPLOAD" == "y" ]; then
-	NAME=$(cat debian/changelog | head -n1 | egrep -o "^[a-z\-]+")
+	NAME=$(cat debian/changelog | head -n1 | egrep -o "^[a-z0-9\.\-]+")
 	VERSION=$(cat debian/changelog | head -n1 | egrep -o "\([0-9a-z\.\-]+*\)" | egrep -o "[0-9a-z\.\-]+")
 
 	for i in $DISTS; do
