@@ -3,6 +3,8 @@ python-elasticsearch
 
 This repository contains debian control files for creating a python-elasticsearch Ubuntu package for precise/saucy/trusty.
 
+This branch will build the 0.4 version of python-elasticsearch.
+
 
 Building
 ========
