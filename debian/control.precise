@@ -1,6 +1,7 @@
 Package: python-elasticsearch-0.4
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-urllib3 (>= 1.5)
+Conflicts: python-elasticsearch-1.0
 Description: Python client for Elasticsearch.
  Official low-level client for Elasticsearch. Its goal
  is to provide common ground for all Elasticsearch-related
@@ -10,6 +11,7 @@ Description: Python client for Elasticsearch.
 Package: python3-elasticsearch-0.4
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends}, python3-urllib3 (>= 1.5)
+Conflicts: python3-elasticsearch-1.0
 Description: Python client for Elasticsearch.
  Official low-level client for Elasticsearch. Its goal
  is to provide common ground for all Elasticsearch-related
