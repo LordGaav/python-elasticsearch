@@ -15,10 +15,10 @@ Build-Depends: debhelper (>= 8.0.0),
 # python-pyaml,
 # python-urllib3,
 # python-pylibmc
-Standards-Version: 3.9.2
+Standards-Version: 3.9.5
 X-Python-Version: >= 2.6
 X-Python3-Version: >= 3.2
 Homepage: https://pypi.python.org/pypi/elasticsearch/
-Vcs-Git: git@github.com:LordGaav/python-elasticsearch.git
+Vcs-Git: https://github.com/LordGaav/python-elasticsearch.git
 Vcs-Browser: https://github.com/LordGaav/python-elasticsearch.git
 
