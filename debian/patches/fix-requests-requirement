@@ -1,0 +1,11 @@
+--- a/setup.py
++++ b/setup.py
+@@ -13,7 +13,7 @@
+ f.close()
+ 
+ install_requires = [
+-    'urllib3>=1.8, <2.0',
++    'urllib3>=1.7, <2.0',
+ ]
+ tests_require = [
+     'requests>=1.0.0, <3.0.0',
